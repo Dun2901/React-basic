@@ -1,0 +1,10 @@
+.todos-container span {
+  color: blue;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 2px;
+}
+.todos-container span:hover {
+  color: red;
+}
