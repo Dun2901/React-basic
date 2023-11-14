@@ -1,28 +1,12 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React from "react";
+import useFetch from "../Hooks/useFetch";
 
 const Post = () => {
-  const [dataUser, setDataUser] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [isError, setIsError] = useState(false);
-
-  // componentDidMount
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        let res = await axios.get("https://jsonplaceholder.typicode.com/users");
-        let data = res && res.data ? res.data : [];
-        setDataUser(data);
-        setIsLoading(false);
-        setIsError(false);
-      } catch (error) {
-        setIsError(true);
-        setIsLoading(false);
-      }
-    };
-
-    fetchData();
-  }, []);
+  const {
+    data: dataUser,
+    isLoading,
+    isError,
+  } = useFetch("https://jsonplaceholder.typicode.com/users");
 
   return (
     <>
