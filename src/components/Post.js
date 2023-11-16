@@ -29,14 +29,23 @@ const Post = () => {
             dataUser &&
             dataUser.length > 0 &&
             dataUser.map((item) => {
+              const {
+                id,
+                name,
+                username,
+                address: { city },
+                email,
+                phone,
+              } = item;
+
               return (
-                <tr key={item.id}>
-                  <td>{item.id}</td>
-                  <td>{item.name}</td>
-                  <td>{item.username}</td>
-                  <td>{item.address.city}</td>
-                  <td>{item.email}</td>
-                  <td>{item.phone}</td>
+                <tr key={id}>
+                  <td>{id}</td>
+                  <td>{name}</td>
+                  <td>{username}</td>
+                  <td>{city}</td>
+                  <td>{email}</td>
+                  <td>{phone}</td>
                 </tr>
               );
             })}
