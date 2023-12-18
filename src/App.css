@@ -38,6 +38,10 @@
   }
 }
 
+.page-container {
+  width: 100%;
+}
+
 #customers {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;

@@ -1,0 +1,97 @@
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.blogs-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.blogs-container .single-blog {
+  border: 1px solid grey;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 10px;
+  max-width: 373px;
+  text-align: left !important;
+}
+.blogs-container .content {
+  padding: 10px 0;
+}
+.blogs-container .title {
+  color: palegreen;
+  font-size: 18px;
+  font-weight: 600;
+}
+.blogs-container button {
+  font-size: 17px;
+  padding: 0.5em 2em;
+  border: transparent;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  background: dodgerblue;
+  color: white;
+  border-radius: 4px;
+}
+
+.blogs-container button:hover {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(30, 144, 255, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.blogs-container button:active {
+  transform: translate(0em, 0.2em);
+}
+
+/* CSS DetailBlog*/
+.button-74 {
+  background-color: #fbeee0;
+  border: 2px solid gray;
+  border-radius: 30px;
+  box-shadow: gray 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-bottom: 10px;
+}
+
+.button-74:hover {
+  background-color: #fff;
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+.blog-detail {
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 3px;
+  margin: 10px;
+  min-height: 100px;
+}
+.blog-detail .content {
+  padding-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}

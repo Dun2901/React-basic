@@ -1,7 +1,7 @@
 import React from "react";
 import useFetch from "../Hooks/useFetch";
 
-const Post = () => {
+const Users = () => {
   const {
     data: dataUser,
     isLoading,
@@ -12,7 +12,7 @@ const Post = () => {
     <>
       <h3>User Information</h3>
       <table id="customers">
-        {console.log(">>> check data user: ", dataUser)}
+        {/* {console.log(">>> check data user: ", dataUser)} */}
         <thead>
           <tr>
             <th>UserId</th>
@@ -71,4 +71,4 @@ const Post = () => {
   );
 };
 
-export default Post;
+export default Users;

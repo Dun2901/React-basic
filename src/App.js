@@ -5,7 +5,10 @@ import "./App.css";
 import NavBar from "./components/NavBar/NavBar";
 import Home from "./components/Home/Home";
 import Todo from "./components/Todo/Todo";
-import Post from "./components/Post";
+import Users from "./components/Users";
+import Countdown from "./components/Countdown";
+import Blogs from "./components/Blog/Blogs";
+import DetailBlog from "./components/Blog/DetailBlog";
 
 // template + logic
 // JSX
@@ -59,8 +62,11 @@ function App() {
           <div className="page-container">
             <Routes>
               <Route path="/" element={<Home updateName={updateName} />} />
-              <Route path="/Post" element={<Post />} />
+              <Route path="/Users" element={<Users />} />
               <Route path="/Todo" element={<Todo title={"All todos"} />} />
+              <Route path="/Countdown" element={<Countdown />} />
+              <Route path="/Blogs" element={<Blogs />} />
+              <Route path="/Blogs/:id" element={<DetailBlog />} />
             </Routes>
           </div>
         </Router>
